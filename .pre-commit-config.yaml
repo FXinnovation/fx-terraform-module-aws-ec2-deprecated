@@ -1,11 +1,11 @@
 repos:
-- repo: git://github.com/antonbabenko/pre-commit-terraform
+- repo: https://github.com/antonbabenko/pre-commit-terraform
   rev: v1.50.0
   hooks:
     - id: terraform_fmt
     - id: terraform_docs
     - id: terraform_tflint
-- repo: git://github.com/pre-commit/pre-commit-hooks
+- repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.0.1
   hooks:
     - id: check-added-large-files
@@ -15,7 +15,7 @@ repos:
     - id: end-of-file-fixer
     - id: mixed-line-ending
     - id: trailing-whitespace
-- repo: https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/pre-commit-afcmf
+- repo: https://github.com/FXinnovation/fx-pre-commit-afcmf
   rev: 0.1.2
   hooks:
     - id: afcmf_commit_validation
